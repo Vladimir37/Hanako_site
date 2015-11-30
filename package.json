@@ -1,0 +1,13 @@
+{
+    "name": "Hanako_site",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node hanako_site.js"
+    },
+    "dependencies": {
+        "body-parser": "*",
+        "express": "*",
+        "jade": "*",
+        "serve-favicon": "*"
+    }
+}
