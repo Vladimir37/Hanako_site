@@ -9,6 +9,6 @@ app.set('view engine', 'jade');
 app.set('views', __dirname +  '/../client/view');
 
 app.get('/', render('basis/index'));
-app.get('/name:', router);
+app.get('/:name', router);
 
 module.exports = app;
