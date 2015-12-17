@@ -1,10 +1,9 @@
 var express = require('express');
 
+var pages = require('../assist/pages');
+
 var router = express.Router();
 
-router.get('/:name?/:article', function(req, res) {
-    console.log(req.params.name + 'one');
-    console.log(req.params.article + 'two');
-});
+router.get('/:lang?/:article', pages);
 
 module.exports = router;

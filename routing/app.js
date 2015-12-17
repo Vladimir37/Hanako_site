@@ -15,7 +15,7 @@ app.use('/src', express.static(__dirname + '/../client/source'));
 
 //routing
 app.get('/', render('basis/index'));
-app.get('/:name?/:article', router);
+app.get('/:lang?/:article', router);
 
 //error initiate
 app.use(error);
