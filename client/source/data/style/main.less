@@ -49,7 +49,27 @@ body {
         max-width: 800px;
         border: solid 2px @purple;
     }
-    a:before {
+    .lang_a {
+        color: black;
+        .lang {
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+        }
+    }
+    .menu_item {
+        text-decoration: none;
+        article {
+            text-align: center;
+            width: 50%;
+            border: 2px solid @purple;
+            color: black;
+            padding: 5px;
+            margin: 5px auto;
+            font-size: 20px;
+        }
+    }
+    a:not(.menu_item, .lang_a):before {
         content: ' ';
     }
     b:before, b:after {
