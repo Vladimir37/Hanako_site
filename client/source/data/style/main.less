@@ -1,0 +1,58 @@
+@purple: #9C27B0;
+@yellow: #FFFFD3;
+@yellowTwo: #f2f2c4;
+body {
+    background: @yellow;
+}
+.logo {
+    width: 940px;
+    margin: 10px auto;
+    img {
+        vertical-align: middle;
+        &[alt="logo_img"] {
+            width: 120px;
+        }
+        &[alt="logo_text"] {
+            height: 60px;
+        }
+    }
+}
+.content {
+    width: 940px;
+    padding: 20px;
+    background: @yellowTwo;
+    margin: 0 auto;
+    text-align: center;
+    p, article {
+        text-align: left;
+    }
+    .mark {
+        color: @purple;
+        border: solid 1px green;
+        background: white;
+        &:before, &:after {
+            content: ' ';
+        }
+    }
+    .note {
+        background: white;
+        border: solid 1px green;
+        padding: 5px;
+        &:before {
+            content: 'Note:';
+            font-weight: bold;
+            display: block;
+            color: @purple;
+        }
+    }
+    img {
+        max-width: 800px;
+        border: solid 2px @purple;
+    }
+    a:before {
+        content: ' ';
+    }
+    b:before, b:after {
+        content: ' ';
+    }
+}
