@@ -1,7 +1,8 @@
 extends ../../basis/layout
 
 block content
-    h1 Администрирование
+    mixin arrows('ru', ['launch', 'custom'])
+    h1.art_header Администрирование
     section.main_article
         p
             | После успешного запуска перейдите по адресу
@@ -229,3 +230,4 @@ block content
             | внизу сообщения появится текст из конфигурационного файла
             span.mark messages.json
             | . Подобный текст появляется и под сообщением, автор которого был заблокирован.
+    mixin arrows('ru', ['launch', 'custom'])

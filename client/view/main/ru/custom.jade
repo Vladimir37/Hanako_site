@@ -1,7 +1,8 @@
 extends ../../basis/layout
 
 block content
-    h1 Кастомизация
+    mixin arrows('ru', ['admin', 'files'])
+    h1.art_header Кастомизация
     section.main_article
         p
             | Если вам не захочется использовать выставленный по умолчанию дизайн Hanako, либо вы пожелаете добавить какие
@@ -60,3 +61,4 @@ block content
             span.mark домен/rules.html
             | . Чтобы пользователям стало известно о существовании этой страницы добавьте ссылки на неё на других страницах.
             | Подробнее о файлах читайте в следующем разделе.
+    mixin arrows('ru', ['admin', 'files'])

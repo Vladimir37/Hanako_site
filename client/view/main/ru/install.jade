@@ -1,7 +1,8 @@
 extends ../../basis/layout
 
 block content
-    h1 Установка
+    mixin arrows('ru', ['general', 'config'])
+    h1.art_header Установка
     section.main_article
         p
             | Прежде всего, для запуска Hanako необходим Node.js. Hanako разрабатвался на Node.js версии 4.2.1, но для
@@ -21,3 +22,4 @@ block content
         a(href="")
             article.download_button Hanako - english version
         p Распакуйте архив в любое удобное вам место. Теперь можно приступать к настройке.
+    mixin arrows('ru', ['general', 'config'])

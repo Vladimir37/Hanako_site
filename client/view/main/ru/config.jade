@@ -1,6 +1,7 @@
 extends ../../basis/layout
 block content
-    h1 Настройка
+    mixin arrows('ru', ['install', 'launch'])
+    h1.art_header Настройка
     section.main_article
         p
             | Перед запуском Hanako необходимо провести настройку. Это несложный процесс, который тем не менее крайне важен.
@@ -137,3 +138,4 @@ block content
             li
                 b prevention
                 | — сообщение при предупреждении.
+    mixin arrows('ru', ['install', 'launch'])

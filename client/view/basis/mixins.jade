@@ -1,0 +1,8 @@
+mixin arrows(lang, arr)
+    section.arrows
+        if(arr[0])
+            a(href="/"+ lang + "/" + arr[0])
+                img(src="/src/img/other/arrow_l.png" alt="ar_l_t")
+        if(arr[1])
+            a(href="/"+ lang + "/" + arr[1])
+                img(src="/src/img/other/arrow_r.png" alt="ar_r_t")
