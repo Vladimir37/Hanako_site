@@ -46,6 +46,28 @@ body {
             color: @purple;
         }
     }
+    .files_scheme {
+        .fs_dir, .fs_fl {
+            cursor: pointer;
+            padding: 7px;
+        }
+        .dir_o, .fl_o {
+            display: none;
+            padding: 7px;
+        }
+        .fs_dir {
+            background: #95a2ff;
+        }
+        .dir_o {
+            background: #bcbcff;
+        }
+        .fs_fl {
+            background: #ffaeb3;
+        }
+        .fl_o {
+            background: #ffd3d3;
+        }
+    }
     img {
         max-width: 800px;
         border: solid 2px @purple;
@@ -77,13 +99,24 @@ body {
             width: 80px;
         }
     }
+    .download_button {
+        text-decoration: none;
+        article {
+            width: 35%;
+            padding: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+            background: purple;
+        }
+    }
     ul {
         text-align: left;
     }
     h1.art_header, h2 {
         text-align: left;
     }
-    a:not(.menu_item, .lang_a):before {
+    .main_article a:before {
         content: ' ';
     }
     b:before, b:after {

@@ -1,0 +1,74 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('ru', ['custom', 'api'])
+    h1.art_header Описание файлов
+    section.main_article
+        p
+            | Hanako состоит из большого числа различных файлов. Если вы пожелаете внести какие-либо свои изменения в проект,
+            | вам необходимо будет разобраться, за что отвечает тот или иной файл. На этой странице вы можете ознакомится
+            | с описанием всех входящих в состав Hanako файлов.
+        section.files_scheme
+            article.fs_dir Hanako
+            article.dir_o Корневой каталог.
+                article.fs_dir app
+                article.dir_o Логика приложения.
+                    article.fs_dir assist
+                    article.dir_o Директория, содержащая основные файлы, на которых строится вся работа приложения.
+                        article.fs_fl admin_crypt.js
+                        article.fl_o Зашифровка и расшифровка данных, связанных с администраторами.
+                        article.fs_fl api.js
+                        article.fl_o Ответы на запросы по api.
+                        article.fs_fl board_list.js
+                        article.fl_o Список досок.
+                        article.fs_fl captcha.js
+                        article.fl_o Генерация и проверка капчи.
+                        article.fs_fl checking_board.js
+                        article.fl_o Проверка прав администратора на действия на доске.
+                        article.fs_fl control.js
+                        article.fl_o Один из ключевых файлов. Действия администраторов, создание постов и тредов.
+                        article.fs_fl database.js
+                        article.fl_o Подключение к базе данных и модели таблиц.
+                        article.fs_fl file_operation.js
+                        article.fl_o Операции с JSON файлами в каталоге data,
+                        article.fs_fl login.js
+                        article.fl_o Расшифровка и проверка логина и пароля администратора при входе.
+                        article.fs_fl pages_checking.js
+                        article.fl_o Проверка существования страницы и доски.
+                        article.fs_fl post_processing.js
+                        article.fl_o Обработка текста сообщения перед сохранением в базу.
+                        article.fs_fl render.js
+                        article.fl_o Один из ключевых файлов. Отображение различных страниц.
+                        article.fs_fl stack.js
+                        article.fl_o Порядок тредов на доске. Подъём при сообщении, удаление, создание, прикрепление.
+                        article.fs_fl status.js
+                        article.fl_o Проверка статуса администратора в административной панели.
+                        article.fs_fl status_common.js
+                        article.fl_o Проверка статуса администратора на доске.
+                        article.fs_fl structure.js
+                        article.fl_o Важный элемент системы отображения треда.
+                        article.fs_fl unban.js
+                        article.fl_o Проверка и разбан IP адресов, чей срок бана истёк.
+                    article.fs_dir data
+                    article.dir_o Данные, которые хранятся не в базе.
+                    article.fs_dir db_storage
+                    article.dir_o Директория для sqlite.
+                    article.fs_dir routing
+                    article.dir_o Роутеры и некоторые обработчики запросов.
+                    article.fs_fl app.js
+                    article.fl_o Основной роутер.
+                article.fs_dir client
+                article.dir_o Файлы, связанные с отображением и front-end частью.
+                article.fs_dir configs
+                article.dir_o Конфигурационные файлы.
+                article.fs_dir node_modules
+                article.dir_o Модули Node.js. Описывать их все бессмысленно, подробнее о каждом вы можете узнать на
+                    a(href="http://npmjs.com/") http://npmjs.com
+                    | .
+                article.fs_dir tmp
+                article.dir_o Каталог для временного хранения изображений во время загрузки.
+                article.fs_fl hanako.js
+                article.fl_o Исполняемый файл приложения.
+                article.fs_fl package.json
+                article.fl_o Метафайл для Node.js.
+    mixin arrows('ru', ['custom', 'api'])
