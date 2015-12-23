@@ -157,8 +157,66 @@ block content
                         article.dir_o Каталог для пользовательских стилей, скриптов и изображений.
                     article.fs_dir view
                     article.dir_o Jade шаблоны страниц.
+                        article.fs_dir admin
+                        article.dir_o Административная панель.
+                            article.fs_fl admins.jade
+                            article.fl_o Управление администраторами.
+                            article.fs_fl bans.jade
+                            article.fl_o Баны и разбаны.
+                            article.fs_fl boards.jade
+                            article.fl_o Управление досками.
+                            article.fs_fl login.jade
+                            article.fl_o Вход в панель.
+                            article.fs_fl panel.jade
+                            article.fl_o Административная панель.
+                            article.fs_fl reports.jade
+                            article.fl_o Управление жалобами.
+                            article.fs_fl spam.jade
+                            article.fl_o Спам-лист.
+                        article.fs_dir basis
+                        article.dir_o Основные частоиспользуемые элементы.
+                            article.fs_fl layout.jade
+                            article.fl_o Шаблон большинства страниц.
+                            article.fs_fl layout_boards.jade
+                            article.fl_o Шаблон досок и тредов.
+                            article.fs_fl mixins.jade
+                            article.fl_o Миксины (шаблоны повторяемых элементов).
+                        article.fs_dir errors
+                        article.dir_o Страницы ошибок.
+                            article.fs_fl e403.jade
+                            article.fl_o Ошибка 403.
+                            article.fs_fl e404.jade
+                            article.fl_o Ошибка 404.
+                            article.fs_fl e449.jade
+                            article.fl_o Ошибка 449.
+                            article.fs_fl e500.jade
+                            article.fl_o Ошибка 500.
+                        article.fs_dir main
+                        article.dir_o Основные страницы.
+                            article.fs_fl ban.jade
+                            article.fl_o Просмотр полученных банов.
+                            article.fs_fl dashboard.jade
+                            article.fl_o Страница на доске.
+                            article.fs_fl index.jade
+                            article.fl_o Главная страница.
+                            article.fs_fl thread.jade
+                            article.fl_o Чтение треда.
+                        article.fs_dir other
+                        article.dir_o Пользовательские HTML файлы.
                 article.fs_dir configs
                 article.dir_o Конфигурационные файлы.
+                    article.fs_fl app.json
+                    article.fl_o Настройки приложения и ограничений постинга.
+                    article.fs_fl captcha.json
+                    article.fl_o Настройки капчи.
+                    article.fs_fl crypt_admin.json
+                    article.fl_o Настройки шифрования администраторских данных.
+                    article.fs_fl crypt_captcha.json
+                    article.fl_o Настройки шифрования капчи.
+                    article.fs_fl db.json
+                    article.fl_o Настройки подключения к базе данных.
+                    article.fs_fl messages.json
+                    article.fl_o Настройки получаемых юзерами предупреждений.
                 article.fs_dir node_modules
                 article.dir_o Модули Node.js. Описывать их все бессмысленно, подробнее о каждом вы можете узнать на
                     a(href="http://npmjs.com/") http://npmjs.com
