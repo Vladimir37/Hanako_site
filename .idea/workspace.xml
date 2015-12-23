@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35690c2-d765-4aab-a228-58fece9fe50a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/view/main/ru/api.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/view/main/ru/api.jade" afterPath="$PROJECT_DIR$/client/view/main/ru/api.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/style/main.less" afterPath="$PROJECT_DIR$/client/source/data/style/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hanako_site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,21 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/view/main/ru/api.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.551724">
-              <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.79082566">
+              <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62475824">
-              <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -114,8 +113,8 @@
         <option value="$PROJECT_DIR$/client/view/main/ru/install.jade" />
         <option value="$PROJECT_DIR$/client/source/data/js/main.js" />
         <option value="$PROJECT_DIR$/client/view/main/ru/files.jade" />
-        <option value="$PROJECT_DIR$/client/view/main/ru/api.jade" />
         <option value="$PROJECT_DIR$/client/source/data/style/main.less" />
+        <option value="$PROJECT_DIR$/client/view/main/ru/api.jade" />
       </list>
     </option>
   </component>
@@ -822,18 +821,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/view/main/ru/api.jade">
+    <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.551724">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
+    <entry file="file://$PROJECT_DIR$/client/view/main/ru/api.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62475824">
-          <caret line="128" column="24" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.79082566">
+          <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
           <folding />
         </state>
       </provider>

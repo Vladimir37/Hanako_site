@@ -133,7 +133,10 @@ block content
             | в реальности JSON возвращается в виде сплошной строки):
         pre
             | {
-            |   status: 0,
-            |   body: {}
+            |   "status": 0,
+            |   "body": {
+            |       "main": [["b", "Random"]],
+            |       "japan": [["a", "Anime"], ["m", "Manga"]]
+            |   }
             | }
     mixin arrows('ru', ['files'])
