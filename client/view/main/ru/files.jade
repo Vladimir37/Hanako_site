@@ -51,14 +51,112 @@ block content
                         article.fl_o Проверка и разбан IP адресов, чей срок бана истёк.
                     article.fs_dir data
                     article.dir_o Данные, которые хранятся не в базе.
+                        article.fs_fl board.json
+                        article.fl_o Список досок с их настройками.
+                        article.fs_fl spam.json
+                        article.fl_o Спам-лист по доскам.
                     article.fs_dir db_storage
                     article.dir_o Директория для sqlite.
+                        article.fs_fl hanako_db.sqlite
+                        article.fl_o База данных sqlite.
                     article.fs_dir routing
                     article.dir_o Роутеры и некоторые обработчики запросов.
+                        article.fs_fl admin.js
+                        article.fl_o Роутер административной панели.
+                        article.fs_fl api.js
+                        article.fl_o Роутер API.
+                        article.fs_fl ban.js
+                        article.fl_o Просмотр своих банов.
+                        article.fs_fl errors.js
+                        article.fl_o Различные ошибки.
+                        article.fs_fl report.js
+                        article.fl_o Отправка репорта.
+                        article.fs_fl testing.js
+                        article.fl_o Капча.
+                        article.fs_fl threads.js
+                        article.fl_o Треды, доски и главная.
                     article.fs_fl app.js
                     article.fl_o Основной роутер.
                 article.fs_dir client
                 article.dir_o Файлы, связанные с отображением и front-end частью.
+                    article.fs_dir source
+                    article.dir_o Стили, скрипты и различные изображения.
+                        article.fs_dir data
+                        article.dir_o Стили и скрипты.
+                            article.fs_dir css
+                            article.dir_o CSS стили.
+                                article.fs_fl jquery-ui.min.css
+                                article.fl_o jQuery UI стили.
+                                article.fs_fl jquery-ui.structure.min.css
+                                article.fl_o jQuery UI стили.
+                                article.fs_fl remodal.css
+                                article.fl_o Стили модального окна.
+                                article.fs_fl remodal-default-theme.css
+                                article.fl_o Стили модального окна.
+                                article.fs_fl reset.css
+                                article.fl_o Сброс стилей перед поключением собственных.
+                                article.fs_fl toastr.min.css
+                                article.fl_o Стили всплывающих подсказок
+                            article.fs_dir js
+                            article.dir_o JS скрипты.
+                                article.fs_fl jquery.js
+                                article.fl_o Скрипты jQuery.
+                                article.fs_fl jquery-ui.min.js
+                                article.fl_o Скрипты jQuery UI.
+                                article.fs_fl less.js
+                                article.fl_o Преобразование LESS в CSS на клиенте.
+                                article.fs_fl main.js
+                                article.fl_o Основные скрипты Hanako.
+                                article.fs_fl page_title.js
+                                article.fl_o Имя страницы в браузере.
+                                article.fs_fl remodal.min.js
+                                article.fl_o Скрипты модального окна.
+                                article.fs_fl toastr.min.js
+                                article.fl_o Скрипты всплывающих подсказок.
+                            article.fs_dir less
+                            article.dir_o LESS стили.
+                                article.fs_fl main.less
+                                article.fl_o Основные стили Hanako.
+                        article.fs_dir img
+                        article.dir_o Изображения и элементы интерфейса.
+                            article.fs_dir main
+                            article.dir_o Каталог с системными изображениями.
+                                article.fs_dir arts
+                                article.dir_o Полноразмерные изображения.
+                                    article.fs_fl e403.jpg
+                                    article.fl_o Изображение при ошибке 403.
+                                    article.fs_fl e404.jpg
+                                    article.fl_o Изображение при ошибке 404.
+                                    article.fs_fl e500.jpg
+                                    article.fl_o Изображение при ошибке 500.
+                                    article.fs_fl index.png
+                                    article.fl_o Изображение на главной странице.
+                                article.fs_dir logo
+                                article.dir_o Элементы логотипа.
+                                    article.fs_fl favicon.ico
+                                    article.fl_o Фавикон (пиктограмма в браузере).
+                                    article.fs_fl logo.png
+                                    article.fl_o Логотип.
+                                    article.fs_fl text.png
+                                    article.fl_o Название возле логотипа.
+                                article.fs_fl cross.png
+                                article.fl_o Закрытие плавающего окна и удаление слова из спам-листа.
+                                article.fs_fl list.png
+                                article.fl_o Список действий администратора.
+                                article.fs_fl refresh.png
+                                article.fl_o Обновление треда.
+                                article.fs_fl t_attach.png
+                                article.fl_o Тред прикреплён.
+                                article.fs_fl t_lock.png
+                                article.fl_o Тред закрыт.
+                                article.fs_fl t_sage.png
+                                article.fl_o Сообщение, не поднимающее тред.
+                            article.fs_dir trd
+                            article.dir_o Каталог с загруженными пользователями изображениями.
+                        article.fs_dir mods
+                        article.dir_o Каталог для пользовательских стилей, скриптов и изображений.
+                    article.fs_dir view
+                    article.dir_o Jade шаблоны страниц.
                 article.fs_dir configs
                 article.dir_o Конфигурационные файлы.
                 article.fs_dir node_modules

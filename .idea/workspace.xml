@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c35690c2-d765-4aab-a228-58fece9fe50a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/view/main/ru/files.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/view/main/ru/install.jade" afterPath="$PROJECT_DIR$/client/view/main/ru/install.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/view/basis/layout.jade" afterPath="$PROJECT_DIR$/client/view/basis/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/js/main.js" afterPath="$PROJECT_DIR$/client/source/data/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/style/main.less" afterPath="$PROJECT_DIR$/client/source/data/style/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/view/main/ru/files.jade" afterPath="$PROJECT_DIR$/client/view/main/ru/files.jade" />
     </list>
     <ignored path="Hanako_site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +46,8 @@
       <file leaf-file-name="files.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/view/main/ru/files.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70240295">
-              <caret line="50" column="87" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.71903884">
+              <caret line="140" column="73" selection-start-line="140" selection-start-column="73" selection-end-line="140" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -848,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/view/main/ru/files.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70240295">
-          <caret line="50" column="87" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.71903884">
+          <caret line="140" column="73" selection-start-line="140" selection-start-column="73" selection-end-line="140" selection-end-column="73" />
           <folding />
         </state>
       </provider>
