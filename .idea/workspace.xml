@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c35690c2-d765-4aab-a228-58fece9fe50a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/view/main/ru/api.jade" afterPath="$PROJECT_DIR$/client/view/main/ru/api.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source/data/style/main.less" afterPath="$PROJECT_DIR$/client/source/data/style/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hanako_site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,9 +27,15 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/view/basis/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9655173">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
+              <folding>
+                <marker date="1450809207027" expanded="true" signature="21:285" placeholder="..." />
+                <marker date="1450809207027" expanded="true" signature="63:171" placeholder="..." />
+                <marker date="1450809207027" expanded="true" signature="98:171" placeholder="..." />
+                <marker date="1450809207027" expanded="true" signature="177:285" placeholder="..." />
+                <marker date="1450809207027" expanded="true" signature="212:285" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,9 +43,45 @@
       <file leaf-file-name="config.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/view/main/ru/config.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.137931">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-              <folding />
+              <folding>
+                <marker date="1450809161171" expanded="true" signature="32:6041" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="126:5995" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="149:747" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="757:872" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="883:1527" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="898:986" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1001:1327" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1342:1527" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1537:1789" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1800:2622" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1815:1913" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="1928:1991" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2006:2070" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2085:2149" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2164:2223" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2238:2326" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2341:2454" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2469:2542" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2557:2622" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="2632:3109" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="3120:3984" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="3135:3529" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="3544:3984" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="3994:4782" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="4793:5533" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="4808:4938" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="4953:5074" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5089:5153" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5168:5282" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5297:5411" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5426:5533" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5543:5813" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5824:5995" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5839:5901" placeholder="..." />
+                <marker date="1450809161171" expanded="true" signature="5916:5995" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +89,8 @@
       <file leaf-file-name="api.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/view/main/ru/api.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79082566">
-              <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.86055046">
+              <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -57,7 +99,7 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335">
+            <state vertical-scroll-proportion="0.0">
               <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
               <folding />
             </state>
@@ -153,7 +195,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -199,168 +240,11 @@
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hanako_site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,8 +324,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15277778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -449,9 +331,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -761,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1404806">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17560074">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1404806">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6672828">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,22 +673,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21072088">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/view/basis/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9655173">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1450809207027" expanded="true" signature="21:285" placeholder="..." />
+            <marker date="1450809207027" expanded="true" signature="63:171" placeholder="..." />
+            <marker date="1450809207027" expanded="true" signature="98:171" placeholder="..." />
+            <marker date="1450809207027" expanded="true" signature="177:285" placeholder="..." />
+            <marker date="1450809207027" expanded="true" signature="212:285" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/view/main/ru/config.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.137931">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <marker date="1450809161171" expanded="true" signature="32:6041" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="126:5995" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="149:747" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="757:872" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="883:1527" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="898:986" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1001:1327" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1342:1527" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1537:1789" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1800:2622" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1815:1913" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="1928:1991" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2006:2070" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2085:2149" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2164:2223" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2238:2326" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2341:2454" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2469:2542" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2557:2622" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="2632:3109" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="3120:3984" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="3135:3529" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="3544:3984" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="3994:4782" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="4793:5533" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="4808:4938" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="4953:5074" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5089:5153" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5168:5282" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5297:5411" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5426:5533" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5543:5813" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5824:5995" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5839:5901" placeholder="..." />
+            <marker date="1450809161171" expanded="true" signature="5916:5995" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -821,18 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source/data/style/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335">
-          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/view/main/ru/api.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79082566">
-          <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.86055046">
+          <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
           <folding />
         </state>
       </provider>
