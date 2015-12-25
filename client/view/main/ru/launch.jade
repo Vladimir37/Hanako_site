@@ -25,4 +25,31 @@ block content
             | её из репозитория вашего дистрибутива Linux. Если у вас Debian, то вам нужно выполнить команду
             span.mark apt-get install libgif4
             | .
+        img(src="/src/img/docs/13.png" alt="doc13")
+        p
+            b Error: Module version mismatch. Expected 14, got 46.
+        p
+            | Главной причиной этой ошибки является устаревшая версия Node.js. Hanako разрабатывался на Node.js версии 4.2.1,
+            | её же и рекомендуется использовать. Также для запуска Node.js определённой версии можно воспользоваться
+            a(href="https://www.npmjs.com/package/n") модулем n
+            | .
+        h2 Окончательный запуск
+        p
+            | Если Hanako без проблем запускается, то необходимо упредить будущие возможные ошибки. Для этого отлично
+            | подойдёт модуль
+            span.mark forever.js
+            | . Этот модуль при падении сервера практически мгновенно его перезапустит, что позволит избежать ряда пролем.
+            | Для его установки вам нужно выполнить следующую команду команду:
+        p
+            span.mark npm install -g forever
+        p
+            | После чего перейти в корневой каталог Hanako и выполнить
+        p
+            span.mark forever start hanako.js
+        p
+            | Всё, Hanako запущен и готов к использованию! При необходимости остановить Hanako достаточно выполнить
+        p
+            span.mark forever stop hanako.js
+        p
+            | из корнегого каталога Hanako.
     mixin arrows('ru', ['config', 'admin'])
