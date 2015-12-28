@@ -6,4 +6,12 @@ $(document).ready(function() {
     $('.fs_fl').click(function() {
         $(this).next('.fl_o').slideToggle();
     });
+    //logo link
+    var path = location.pathname.split('/');
+    if(path.length >= 3) {
+        $('.logo').css('cursor', 'pointer');
+        $('.logo').click(function() {
+            location.pathname = '/' + path[1];
+        });
+    }
 });
