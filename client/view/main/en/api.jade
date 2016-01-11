@@ -1,0 +1,285 @@
+extends ../../basis/layout
+block content
+    mixin arrows('en', ['mark'])
+    h1.art_header API
+    section.main_article
+        p
+            | Hanako has a powerful API, which can be used in a variety of different tasks. For example, due to
+            | the existence of API, creation of mobile applications for Hanako has become an easy task. Given below you can see
+            | a table listing the possible API calls and a brief description about them.
+        table
+            tr
+                th Address
+                th Type
+                th Parameters
+                th Details
+            tr
+                td
+                    span.mark /api/boards
+                td GET
+                td
+                td Return to the list of existing boards according to their categories.
+            tr
+                td
+                    span.mark /api/dashboard
+                td GET
+                td board, page
+                td Returns to the page of the board with its threads (first thread and the last 3 ones).
+            tr
+                td
+                    span.mark /api/thread
+                td GET
+                td board, num
+                td Returns all posts of the thread.
+            tr
+                td
+                    span.mark /api/post
+                td GET
+                td board, num
+                td Returns one post from the board.
+            tr
+                td
+                    span.mark /testing/new
+                td GET
+                td
+                td Returns a new key of CAPTCHA.
+            tr
+                td
+                    span.mark /testing
+                td GET
+                td key
+                td Returns an image of CAPTCHA.
+            tr
+                td
+                    span.mark /<address of the board>/
+                td POST
+                td c_key, c_value, text. Optional: sage, title, name, file
+                td Creation of a thread.
+            tr
+                td
+                    span.mark /<address of the board>/<number of the thread>
+                td POST
+                td c_key, c_value, text. Optional: sage, title, name, file
+                td Answer in a thread.
+        h2 Description of parameters
+        p
+            | Some API calls occur without observing parameters, but the rest have to pass through them mandatorily.
+            | If indicated that observing the parameter is optional, it means you can do without it. Description of the parameters:
+        ul
+            li
+                b board
+                | — address of the board. A line consisting of several letters, sometimes with numbers.
+            li
+                b page
+                | — page number.
+            li
+                b num
+                | — post number. When choosing a thread - the number of the first post.
+            li
+                b c_key
+                | — key of CAPTCHA. You can obtain by querying the
+                span.mark /testing/new
+                | .
+            li
+                b c_value
+                | — the value of CAPTCHA entered by user.
+            li
+                b key
+                | — CAPTCHA key, according to which the CAPTCHA image is generated
+            li
+                b text
+                | — text of the post, which is entered by the user.
+            li
+                b name
+                | — name of the post and key for generating tripcode, separated by # symbol
+                span.mark #
+                | . Optional.
+            li
+                b title
+                | — title of the post. Optional.
+            li
+                b sage
+                | — If checked, the message does not lift the thread in the overall list. Optional.
+            li
+                b file
+                | — loaded image. Optional, not available on all boards.
+        h2 Form for answering
+        p
+            | Various queries return results in different forms, the most suitable specifically for this type of data.
+            | Almost all queries return an answer in a standard form. The standard form of a JSON object
+            | two of their properties -
+            span.mark status
+            | и
+            span.mark body
+            | . Possibles statuses:
+        ul
+            li
+                b 0
+                | — the query has been successfully completed. In
+                span.mark body
+                | the results are present.
+            li
+                b 1
+                | — nothing has been found. Identical to error 404.
+            li
+                b 2
+                | — server error has occured. Identical to error 500.
+        p
+            span.mark /api/boards
+            | — answer in the standard form. In
+            span.mark body
+            | contains object with properties, analogous to categories of boards, which contain an array of nested files
+            | made of two elements - addresses and names. For example(hereinafter are given formatted code, whereas
+            | in reality JSON is returned as a continuous line):
+        pre
+            | {
+            |   "status": 0,
+            |   "body": {
+            |       "main": [["b", "Random"]],
+            |       "japan": [["a", "Anime"], ["m", "Manga"]]
+            |   }
+            | }
+        p
+            span.mark /api/dashboard
+            | — answer in the standard form. In
+            span.mark body
+            | contains an object with three properties: board, count and posts. Board contains two properties - addr with the address of the board
+            | and data with the characteristics of the board. The count property contains an array of the number of elements, equal to the number
+            | of threads on the page. Each element contains a number which is equal to the number of posts in this thread. Finally, in the posts
+            | are located an array of threads. Each element is an array of two elements - array of the last
+            | posts (from zero to three) and first message. For example:
+        pre
+            | {
+            |   "status": 0,
+            |   "body": {
+            |       "board": {
+            |           "addr": "b",
+            |           "data" {<board properties>}
+            |       },
+            |       "count": [3, 221, 15, 456, 137],
+            |       "posts": [
+            |           [[{...}, {...}], {...}],
+            |           [[{...}, {...}, {...}], {...}],
+            |           [[{...}, {...}, {...}], {...}],
+            |           [[{...}, {...}, {...}], {...}],
+            |           [[{...}, {...}, {...}], {...}],
+            |           [[{...}, {...}, {...}], {...}],
+            |       ]
+            |   }
+            | }
+        p
+            | Herinafter
+            span.mark {...}
+            | denotes standard message object. It has all the necessary details about the message. Most important
+            | properties of this object are:
+        ul
+            li
+                b id
+                | — number of the post.
+            li
+                b admin
+                | — 1 if the message is written by the administrator, null if not.
+            li
+                b thread
+                | — in which thread is situated this message. If null - it is the first message of the thread.
+            li
+                b attached
+                | — if 1, then the thread is attached. For thread.
+            li
+                b close
+                | — if 1, then the thread is closed. For thread.
+            li
+                b createdAt
+                | — date of creation of the post.
+            li
+                b image
+                | — if null, then the post doesn't have images. Otherwise, over there is an extension of the image. Complete address
+                | of the image:
+                span.mark /src/img/trd/board/thread/number of the post.extension
+                | .
+            li
+                b text
+                | — message text.
+            li
+                b title
+                | — title of message or null.
+            li
+                b name
+                | — user name.
+            li
+                b trip
+                | — tripcode of the user or null.
+            li
+                b sage
+                | — if 0, then it is an ordinary message. if 1, then this message doesn't lift the thread in the general list.
+        p
+            span.mark /api/thread
+            | — answer in the standard form. In
+            span.mark body
+            | contains object with three properties: boards_data, op_post, posts. Unlike the previous query,
+            | boards_data doesn't contain all the information and is an array made of three elements. First - is the address
+            | of the board, second - name of the board, third - whether it is allowed to attach images to the posts, true/false. Property
+            | op_post contains standard object message, but posts - array of standard object messages. For example:
+        pre
+            | {
+            |   "status": 0,
+            |   "body": {
+            |       "boards_data": ["b", "Random", true],
+            |       "op_post": {...},
+            |       "posts": [{...}, {...}, {...}, {...}, {...}]
+            |   }
+            | }
+        p
+            span.mark /api/post
+            | — answer in the standard form. In
+            span.mark body
+            | contains standard object message. For example:
+        pre
+            | {
+            |   "status": 0,
+            |   "body": {...}
+            | }
+        p
+            span.mark /testing/new
+            | — returns directly the text key.
+        p
+            span.mark /testing
+            | — returns directly the image.
+        p
+            | When sending a new thread or post a response comes in the form of one number, meaning the status of the response. Here is the complete
+            | list of possible response statuses of the server when sending a post or thread with explanations:
+        ul
+            li
+                b 0
+                | — message sent successfully. The only successful status, others are of different errors.
+            li
+                b 1
+                | — CAPTCHA entered incorrectly.
+            li
+                b 2
+                | — the message haswords from the spam-list.
+            li
+                b 3
+                | — IP address is blocked.
+            li
+                b 4
+                | — thread is closed.
+            li
+                b 5
+                | — thread is not found.
+            li
+                b 6
+                | — server error.
+            li
+                b 7
+                | — large size image.
+            li
+                b 8
+                | — incorrect file format.
+            li
+                b 9
+                | — need to attach image.
+            li
+                b 10
+                | — insufficient time interval between current and last post.
+    mixin arrows('en', ['mark'])

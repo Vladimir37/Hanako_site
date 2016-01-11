@@ -2,13 +2,21 @@ extends ../../basis/layout
 
 block content
     h1 Menu
+    section.main_article
+        p
+            | Hanako - is a modernised and highly functional engine for  anonymous forum (imageboard), which combines in itself
+            | wide oppurtunities and capabilities of Wakaba and Kusaba along with easiness in configuration. It can be used "as is", and can also be modified
+            | to suit your needs, which is facilitated by the open nature and commenting possibility of the code. Particularly worth mentioning
+            | is its high operational speed and stability with large work loads.
+        p
+            | Here you can read all the documentation on Hanako.
     section.index_menu
         a(href='/en/general').menu_item
             article General information
         a(href='/en/install').menu_item
-            article Installing
-        a(href='/en/config').menu_item
             article Configuration
+        a(href='/en/config').menu_item
+            article Settings
         a(href='/en/launch').menu_item
             article Launch
         a(href='/en/admin').menu_item
@@ -16,7 +24,7 @@ block content
         a(href='/en/custom').menu_item
             article Customization
         a(href='/en/files').menu_item
-            article Files description
+            article File descriptions
         a(href='/en/mark').menu_item
             article Marking
         a(href='/en/api').menu_item

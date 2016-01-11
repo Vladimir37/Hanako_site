@@ -1,0 +1,230 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['custom', 'mark'])
+    h1.art_header File descriptions
+    section.main_article
+        p
+            | Hanako consists of a large number of different types of files. If you wish to make any changes to your project,
+            | you will need to understand the responsibilities of a particular file. On this page you can get accustomed
+            | with the description of all files included in Hanako.
+        section.files_scheme
+            article.fs_dir Hanako
+            article.dir_o Root catalogue.
+                article.fs_dir app
+                article.dir_o Application logic.
+                    article.fs_dir assist
+                    article.dir_o Directory, containing the main files, upon which the whole work of the application is constructed.
+                        article.fs_fl admin_crypt.js
+                        article.fl_o Encryption and decryption of data associated with the administrators.
+                        article.fs_fl api.js
+                        article.fl_o Answers for queries on api.
+                        article.fs_fl board_list.js
+                        article.fl_o Boards list.
+                        article.fs_fl captcha.js
+                        article.fl_o Generation and verification of CAPTCHA.
+                        article.fs_fl checking_board.js
+                        article.fl_o Verification of administrator's rights on their actions on the board.
+                        article.fs_fl control.js
+                        article.fl_o One of the key files. Action of administrators, creation of posts and threads.
+                        article.fs_fl database.js
+                        article.fl_o Connection to the the database and table models.
+                        article.fs_fl file_operation.js
+                        article.fl_o Operation with JSON files in data catalogue,
+                        article.fs_fl login.js
+                        article.fl_o Decrypt and verify administrator login and password while logging in.
+                        article.fs_fl pages_checking.js
+                        article.fl_o Verify the existence of the page and boards.
+                        article.fs_fl post_processing.js
+                        article.fl_o Processing message text before saving to the database.
+                        article.fs_fl render.js
+                        article.fl_o One of the key files. Displaying different pages.
+                        article.fs_fl stack.js
+                        article.fl_o The order of threads on the board. Ascent in the list on sending messages, deletion, creation, attachment.
+                        article.fs_fl status.js
+                        article.fl_o Verification of the status of the administrator in the administrative panel.
+                        article.fs_fl status_common.js
+                        article.fl_o Verification of the status of an administrator on the board.
+                        article.fs_fl structure.js
+                        article.fl_o An important element of the display thread.
+                        article.fs_fl unban.js
+                        article.fl_o Verification and unblocking of IP addresses whose ban term expired.
+                    article.fs_dir data
+                    article.dir_o The data that are stored not in the database.
+                        article.fs_fl board.json
+                        article.fl_o List of boards and their settings.
+                        article.fs_fl spam.json
+                        article.fl_o Spam list on boards.
+                    article.fs_dir db_storage
+                    article.dir_o Directory for sqlite.
+                        article.fs_fl hanako_db.sqlite
+                        article.fl_o Database of sqlite.
+                    article.fs_dir routing
+                    article.dir_o Routers and some query handlers.
+                        article.fs_fl admin.js
+                        article.fl_o Router of administrative panel.
+                        article.fs_fl api.js
+                        article.fl_o Router of API.
+                        article.fs_fl ban.js
+                        article.fl_o View your bans.
+                        article.fs_fl errors.js
+                        article.fl_o Various errors.
+                        article.fs_fl report.js
+                        article.fl_o Sending report.
+                        article.fs_fl testing.js
+                        article.fl_o CAPTCHA.
+                        article.fs_fl threads.js
+                        article.fl_o Threads, boards and home.
+                    article.fs_fl app.js
+                    article.fl_o Main router.
+                article.fs_dir client
+                article.dir_o Files, which are related to и front-end part.
+                    article.fs_dir source
+                    article.dir_o Styles, scripts and a variety of images.
+                        article.fs_dir data
+                        article.dir_o Styles and scripts.
+                            article.fs_dir css
+                            article.dir_o CSS styles.
+                                article.fs_fl jquery-ui.min.css
+                                article.fl_o jQuery UI styles.
+                                article.fs_fl jquery-ui.structure.min.css
+                                article.fl_o jQuery UI styles.
+                                article.fs_fl remodal.css
+                                article.fl_o Styles of a modal window.
+                                article.fs_fl remodal-default-theme.css
+                                article.fl_o Styles of a modal window.
+                                article.fs_fl reset.css
+                                article.fl_o Reset styles before plugging in your own.
+                                article.fs_fl toastr.min.css
+                                article.fl_o Tootip styles
+                            article.fs_dir js
+                            article.dir_o JS scripts.
+                                article.fs_fl jquery.js
+                                article.fl_o Scripts jQuery.
+                                article.fs_fl jquery-ui.min.js
+                                article.fl_o Scripts jQuery UI.
+                                article.fs_fl less.js
+                                article.fl_o Conversion of LESS to CSS on the client.
+                                article.fs_fl main.js
+                                article.fl_o Main scripts of Hanako.
+                                article.fs_fl page_title.js
+                                article.fl_o Name of the page in the browser.
+                                article.fs_fl remodal.min.js
+                                article.fl_o Scripts of modal window.
+                                article.fs_fl toastr.min.js
+                                article.fl_o Tooltip scripts.
+                            article.fs_dir less
+                            article.dir_o LESS styles.
+                                article.fs_fl main.less
+                                article.fl_o Main styles of Hanako.
+                        article.fs_dir img
+                        article.dir_o Images and elements of interface.
+                            article.fs_dir main
+                            article.dir_o Catalogue of system images.
+                                article.fs_dir arts
+                                article.dir_o Full-size images.
+                                    article.fs_fl e403.jpg
+                                    article.fl_o Image on error 403.
+                                    article.fs_fl e404.jpg
+                                    article.fl_o Image on error 404.
+                                    article.fs_fl e500.jpg
+                                    article.fl_o Image on error 500.
+                                    article.fs_fl index.png
+                                    article.fl_o Image on home page.
+                                article.fs_dir logo
+                                article.dir_o Elements of logo.
+                                    article.fs_fl favicon.ico
+                                    article.fl_o Favicon (pictogram in the browser).
+                                    article.fs_fl logo.png
+                                    article.fl_o Logo.
+                                    article.fs_fl text.png
+                                    article.fl_o Name near logo.
+                                article.fs_fl cross.png
+                                article.fl_o Closing of the floating window and removing words from the spam list.
+                                article.fs_fl list.png
+                                article.fl_o The list of actions of the Administrator.
+                                article.fs_fl refresh.png
+                                article.fl_o Refreshing the thread.
+                                article.fs_fl t_attach.png
+                                article.fl_o Thread is attached.
+                                article.fs_fl t_lock.png
+                                article.fl_o Thread is closed.
+                                article.fs_fl t_sage.png
+                                article.fl_o Message which doesn't raise the thread.
+                            article.fs_dir trd
+                            article.dir_o Catalogue with pictures uploaded by users.
+                        article.fs_dir mods
+                        article.dir_o Catalogue for custom styles, scripts and images.
+                    article.fs_dir view
+                    article.dir_o Jade page templates.
+                        article.fs_dir admin
+                        article.dir_o Administrative panel.
+                            article.fs_fl admins.jade
+                            article.fl_o Administrative control.
+                            article.fs_fl bans.jade
+                            article.fl_o Bans and unbans.
+                            article.fs_fl boards.jade
+                            article.fl_o Management of boards.
+                            article.fs_fl login.jade
+                            article.fl_o Log in to panel.
+                            article.fs_fl panel.jade
+                            article.fl_o Administrative panel.
+                            article.fs_fl reports.jade
+                            article.fl_o Management of complaints.
+                            article.fs_fl spam.jade
+                            article.fl_o Spam-list.
+                        article.fs_dir basis
+                        article.dir_o Frequently used main elements.
+                            article.fs_fl layout.jade
+                            article.fl_o Templates of majority of the pages.
+                            article.fs_fl layout_boards.jade
+                            article.fl_o Templates of boards and threar.
+                            article.fs_fl mixins.jade
+                            article.fl_o Mixins (templates of repeated elements).
+                        article.fs_dir errors
+                        article.dir_o Error pages.
+                            article.fs_fl e403.jade
+                            article.fl_o Error 403.
+                            article.fs_fl e404.jade
+                            article.fl_o Error 404.
+                            article.fs_fl e449.jade
+                            article.fl_o Error 449.
+                            article.fs_fl e500.jade
+                            article.fl_o Error 500.
+                        article.fs_dir main
+                        article.dir_o Main pages.
+                            article.fs_fl ban.jade
+                            article.fl_o Viewing received bans.
+                            article.fs_fl dashboard.jade
+                            article.fl_o Page on the board.
+                            article.fs_fl index.jade
+                            article.fl_o Home page.
+                            article.fs_fl thread.jade
+                            article.fl_o Reading the thread.
+                        article.fs_dir other
+                        article.dir_o User HTML files.
+                article.fs_dir configs
+                article.dir_o Configuration files.
+                    article.fs_fl app.json
+                    article.fl_o Application settings and restrictions of posting.
+                    article.fs_fl captcha.json
+                    article.fl_o CAPTCHA settings.
+                    article.fs_fl crypt_admin.json
+                    article.fl_o Settings for administrator data encryption.
+                    article.fs_fl crypt_captcha.json
+                    article.fl_o Settings for CAPTCHA encryption.
+                    article.fs_fl db.json
+                    article.fl_o Settings for connection to the database.
+                    article.fs_fl messages.json
+                    article.fl_o Settings for warnings received by users.
+                article.fs_dir node_modules
+                article.dir_o Modules Node.js. Describing all of them is pointless, you can learn about all of them in detail at
+                    a(href="http://npmjs.com/") http://npmjs.com
+                    | .
+                article.fs_dir tmp
+                article.dir_o Catalogue for temporary storage of images while downloading.
+                article.fs_fl hanako.js
+                article.fl_o Executable file of the application.
+                article.fs_fl package.json
+                article.fl_o Metafile for Node.js.
+    mixin arrows('en', ['custom', 'mark'])

@@ -1,0 +1,234 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['launch', 'custom'])
+    h1.art_header Administration
+    section.main_article
+        p
+            | After the successful launch, go to the web address
+            span.mark your_domain:port/admin/login
+            | .
+        article.note
+            | If you started Hanako on your computer, then instead of a domain you need to specify
+            span.mark localhost
+            | . Also, if your selected port is 80, you may not specify it.
+        p
+            | Now a window will open to enter the control panel. At present there exists only one administrator account,
+            | through it only you need  to enter . Enter login details
+            span.mark Admin
+            | and password
+            span.mark Pass
+            | , as well as the captcha from the image and make entry. If you did everything correctly, a menu opens before you
+            | for navigation through the administrative panel.
+        img(src="/src/img/docs/2.png" alt="doc2")
+        p
+            | The number of items in this menu depends on the status of the administrator.
+            | The default account which is created has the status of 3 - maximum, and it has access to all the items. Now let's look
+            | at all the items in detail.
+        h2 Spam-list
+        p
+            | The first item which comes is the spam-list. Entering which, you will see a list of boards with their spam-lists, as well as the   overall spam-list -
+            | indicated by the word
+            span.mark all
+            | .
+        img(src="/src/img/docs/1.png" alt="doc1")
+        p
+            | To add a new word to the spam list, type it in the text box under the name of the board or
+            span.mark all
+            | , then click on the button
+            span.mark Add
+            | . Done! Now the user can't send message on this board, if it contains the word contained
+            | in the spam list. To remove words from the spam list, click on the cross sign next to it.
+        h2 Bans
+        p
+            | The ability to ban a user by IP-address is a necessity of any image-board. When you enter this menu, you will see
+            | a list of currently banned users  and the banning forms.
+        img(src="/src/img/docs/3.png" alt="doc3")
+        p
+            | To ban a certain address, enter it in the specified field
+            span.mark IP
+            | given in the form. In the specific field
+            span.mark Reason
+            | enter the reason for banning - as per your discretion. In the specific field
+            span.mark Ban days
+            | enter the number of days for which the address is to be banned. This field must contain only numbers!
+            | In the next drop-down list, select the board on which will be blocked address or an appropriate value
+            span.mark All
+            | to block on all the boards. From banned addresses it will be impossible to send messages to one or all boards.
+            | The number of bans on one address is unlimited.
+            | After this please click on the button
+            span.mark Ban
+            | and the address will be blocked. The table below lists all the blocked addresses. Opposite to each row
+            | is situated a button
+            span.mark Unban
+            | , on clicking which that address will be blocked. In the same line itself are listed the following information – reference number
+            | of the ban; address; boards, on which the ban is active; or
+            span.mark All
+            | , login details of the administrator who has enacted the ban, reason for the ban, the number of days the ip is banned ( the total number of days it is banned is indicated,
+            | and not the remaining days of ban) and date of blocking the ip address. Please note that the verification of all banned users or ip addresses occurs once a day,
+            | and therefore unblocking of banned ip addresses or users may not happen instantly.
+        h2 Boards
+        p
+            | Of course, your imageboard will consist of a certain number of boards - similar to sections in a classical
+            | forum. You can manage them in the corresponding section.
+        img(src="/src/img/docs/4.png" alt="doc4")
+        p
+            | Given above is the form for creating a new board, given below - editing of already existing ones. Let's look at all the
+            | elements of the board creation forms in detail. They are in this order - on the top are four text fields, in the middle are six checkboxes
+            | (switches that can be just yes / no) and at the bottom four digital fields. Now let's consider the text fields.
+            | Field with the name of the board
+            span.mark name
+            | takes the address of the board. Typically, this consists of one to three Latin letters, possibly with numerals. Length is not limited.
+            span.mark Public name
+            | - this is the full name of the board, for example - "Cinema" or "Games." In this field
+            span.mark Category
+            | you need to enter name of the category. All boards are grouped according to these categories. Examples are – “Japanese Culture”,
+            | “Game universe”, “Other”. The last text field
+            span.mark Default username
+            | is for the name of the author of the communication, unless otherwise indicated. As a rule, name is often written as "Anonymous". Now
+            | we will have a look on the switches. The first of these is called
+            span.mark Allow images
+            | and is responsible for the authorization for attaching images to a post. If this option is not selected, users
+            | can't add images. This item
+            span.mark Allow tripcodes
+            | is responsible for allowing the use of Tripcodes. If it is checked then all the characters entered by the user in the field "Name"
+            | after hash sign (#) will be converted into a unique Tripcode, that can be used to confirm
+            | authorship of any post. Next item entitled
+            span.mark Required tripcodes
+            | allows you to make forced Tripcodes. If it is activated, tripcode will be generated
+            | in any post based on the IP address. This item
+            span.mark Hidden
+            | on activation will make the board hidden. Such a board does not appear in the list of boards. This item
+            span.mark Required image in OP-post
+            | makes it mandatory to attach an image to the first post of the thread. If it is not active, then, users will be able to
+            | create threads without an image. This item
+            span.mark Allow roulette
+            | permits the use of roulette (Dice rolls). If this option is active, users on this board will be able to
+            | to use rolling of dices to generate random numbers in the form
+            b (maximum value)RL(number of dice rolls)
+            | . For example,
+            b 50RL10
+            | indicating that ten rolls/throws of dices will be generated with a maximum value at 50. The result will look like
+            | this:
+        img(src="/src/img/docs/5.png" alt="doc5")
+        p
+            | In the brackets is indicated the maximum possible value/sum. This is useful for role-playing games.
+        article.note
+            | The maximum number of throws - 10, the maximum value of a throw - 100.
+        p
+            | Finally, let's look at the digital fields. The first field is called
+            span.mark Bumplimit
+            | and indicates the number of messages, following which the thread ceases to rise. Deprived of the possibility of
+            | rising up in the list, it gradually goes away into the increasingly distant pages, until it disappears altogether. Value
+            | for this purpose by default - 500. Next field is called
+            span.mark Threads on page
+            | and indicates the number of threads on a single page. You should not put too much threads in one page, otherwise the page will take a long time
+            | to get loaded, and at the same time, not too few threads, because then the user will have to frequently move from one page to another. The number of threads
+            | by default - 10. The third field
+            span.mark Max pages
+            | receives the number of pages that will exist on the board. The number of pages multiplied by the number
+            | of threads on the page gives the total number of threads. If the maximum number is reached, a new thread is created,
+            | then the thread, in which was written , at the earliest, will get removed. The default value for this - 10. The last field is called
+            span.mark Max image size in mb
+            | shows maximum image size in megabytes. Typically, a large number of images with large
+            | size quickly fills all available space on the disk, so this setting is much important. But it is worth remembering,
+            | that when you delete a thread all the images of the thread are removed, therefore this parameter is to be correlated with total size
+            | available on the server and the total number of threads.
+        p
+            | Below are located practically similar forms for already created boards. The only difference is that
+            | there is no possibility to change the address of the board. After you make the necessary changes, click on
+            | the button
+            span.mark Add
+            | or on
+            span.mark Edit
+            | , after which the changes come into effect.
+        h2 Administrators
+        p
+            | When imageboard becomes popular, managing it alone becomes difficult. In such a case one can
+            | hire additional administrators, just in case, for safety reasons, restricting their rights.
+        img(src="/src/img/docs/6.png" alt="doc6")
+        p
+            | Here you can see a form to add new administrators, as well as a table listing all existing ones.
+            | Adding a new administrator is simple. Type in the first field, his unique login, and in the field below - the password.
+            | Next you need to specify his status from zero to three (description of administrator's authority according to different statuses
+            | is given a little below). After this you have to either choose one or more boards in the list (all the active boards
+            | in the given point of time are listed there) or select the item
+            span.mark All boards
+            | for selecting all the boards at the same time. After selecting the boards to which will be active the powers of the administrator
+            | Click on the button
+            span.mark Create
+            | for creating. To lock the current administrator, click on the button
+            span.mark Block
+            | .
+        article.note
+            | It is strongly recommended that you create a new administrator with the status 3 and authority to all the boards, and the available
+            | by default 'Admin' be blocked, as its password is published here.
+        p
+            | The following are all the capabilities available to the administrators with varying statuses. Every higher status administrators has the right to
+            | on everything that a lower status one has authority to, in addition to these they have additional features - that is, an administrator with the status 3
+            | can do everything same as the administrators with the status of 0-2, as well as has some additional features. Listed below are
+            | only additional features.
+        ul
+            li
+                b 0
+                | — Menu items: complaints. Actions in the thread: no.
+            li
+                b 1
+                | — Menu items: spam list. Actions in the thread: to remove post, give a warning.
+            li
+                b 2
+                | — Menu items: bans. Actions in the thread: remove all the posts of the author, remove all the posts and the threads of the author, to ban
+                | the author, to remove thread, attach / detach thread, close / open thread.
+            li
+                b 3
+                | — Menu items: administrators, boards. Actions in the thread: no.
+        p
+            | The menu items are used by all administrators in the same way, but the action in the thread can only be made on that board,
+            | to which he or she has been granted administrator rights.
+        h2 Complaints
+        p
+            | For communication between administration of and its users imageboard there is a mechanism of complaints (reporting system). Its essence
+
+            | is like this - any user from any thread can send a complaint with text, and an administrator of any status, including
+            | a zero level can read it from the admin panel.
+        img(src="/src/img/docs/7.png" alt="doc7")
+        p
+            | In the upper left corner is a selector for switching the reading between of resolved and unresolved complaints. Table of unresolved
+            | complaints are having the following details in the order: number; IP address, from which the complaint was submitted; board; thread;
+            | the content of the complaint; the date of filing the complaint. To the right of these is a form for solution. By entering your solution and clicking on
+            | the button
+            span.mark Solve
+            | you turn the category of a complaint into the resolved one. By clicking on the link in the upper left corner you can see all resolved
+            | complaints.
+        img(src="/src/img/docs/8.png" alt="doc8")
+        p
+            | It has all the the same data as in the unresolved category, plus three new paragraphs - solution, login of the administrator who closed
+            | the complaint on its resolution and date of closure.
+        h2 Action in the thread
+        p
+            | Of course, administrator rights are not limited to actions in the administrative panel. Also, some
+            | actions can directly be used on the boards, by clicking on the the symbol box in the upper right corner with lists of
+            | messages that appear only after authorization by the administrator.
+        img(src="/src/img/docs/9.png" alt="doc9")
+        p
+            | Administrators with different statuses have access to different actions. These actions also differ depending on
+            | whether it was a normal message that is selected, or the first message of the thread (OP-post). The maximum available actions
+            | are:
+        ul
+            li
+                b For the first message of the thread
+                | — attach/detach the thread (it will not descend down the list when others are picked up more instead of it), close/open thread (it
+                | makes the thread inaccessible for sending messages), delete the thread, block the author, delete all the messages of the author,
+                | delete all the threads and messages of the author and issue a warning.
+            li
+                b For ordinary message
+                | — delete the message, issue a warning, block the author, delete all the messages of the author,
+                | delete all the threads and messages of the author.
+        img(src="/src/img/docs/10.png" alt="doc10")
+        p
+            | On selecting this option
+            span.mark Issue a warning
+            | just below the message appears a text from the configuration file for this option
+            span.mark messages.json
+            | . Similar text appears under the messages, of the author who has been blocked.
+    mixin arrows('en', ['launch', 'custom'])

@@ -1,0 +1,32 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', [false, 'install'])
+    h1.art_header General information
+    section.main_article
+        p
+            | Hanako - this is an engine for anonymous forum (imageboard). It advantageously differs from other engines with abundant
+            | capabilities and options, excellent work "out of the box" and the rich possibilities for customization. Operational speed of Hanako
+            | is several times faster and more stable than the nearest competitors - Wakaba, Kusaba and Futallaby, and is much better in withstanding
+            | large workloads. By virtue of this, Hanako is a suitable choice for small imageboards, as well as for largest portals
+            | with tens of thousands of daily visitors.
+        p
+            | Despite the fact that Hanako is ready for operation "out of the box", editing and customizing the engine is simple and convenient.
+            | Users can incorporate their own JS-скрипты and CSS/LESS-styles into the engine with much ease. Also it has special folder
+            | for pages in the form of Jade-templates, which will be available for browsing immediately after being placed in the folder. Furthermore
+            | advanced processing of the engine is also not of great difficulty, because all the code is commented in
+            | english language.
+        p
+            | Hanako engine was written in Node.js and can use practically any SQL database - MySQL, MariaDB, PostgreSQL,
+            | MSSQL, sqlite (last one is installed by default). As HTML templating system, Jade is used, which was
+            | was selected for its high level of functionality, which doesn't have equals among other templating systems.
+            | Hanako also uses its own module for drawing images
+            | for elimination of robots (CAPTCHA), which makes it independent of third-party services. Integrated CAPTCHA system has extensive settings
+            | in its configuration files and is very difficult to read for machines. If needed you have option to add any external CAPTCHA service,
+            | for example from Google or Yandex.
+        p
+            | Especially worth noting is the possibility on setting up separate boards for moderators with high status. They can
+            | enable or disable the use of Tripcodes (identification codes),  making them mandatory and be generated
+            | on the basis of IP address, enable or disable image attachment to the message, and more. And all these
+            | are presented in a convenient and visualised user interface! The Capabilities for editing configuration files are almost limitless.
+    mixin arrows('en', [false, 'install'])

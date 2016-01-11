@@ -1,0 +1,142 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['install', 'launch'])
+    h1.art_header Settings
+    section.main_article
+        p
+            | Before starting Hanako it is necessary to configure it. This is not a complicated process, which is nevertheless a very important one.
+            | Go into the directory
+            span.mark config
+            | , which is located in the root catalogue of Hanako. Here lies all configuration files. They only need to be configured.
+            | Only the values must be changed
+            span.mark port
+            | in the file
+            span.mark app.json
+            | and all the values in
+            span.mark db.json
+            | , however, you can optionally edit other configuration files also.
+        p
+            | For beginning this, open the file
+            span.mark app.json
+            | . The properties indicate the following:
+        ul
+            li
+                b port
+                | — port, that will listen the app.
+            li
+                b seconds_post
+                | — the user will be able to send new messages only once in a specified number of seconds. For example, if you specify 5 -
+                | then an user can't send more than one message in a time interval of 5 seconds. This countdown is carried out on each board separately.
+                | It made for protection against wipe.
+            li
+                b seconds_thread
+                | — the same as the previous property, but more on the creation of new threads and not sending messages to
+                | already existing ones.
+        p
+            | Next configuration file is called
+            span.mark captcha.json
+            | and is designed to change the types of tests to distinguish humans and robots (CAPTCHA). Here, you may not change anything.
+            | Property values are such:
+        ul
+            li
+                b size
+                | — the number of letters displayed in a CAPTCHA. Recommended values - 4-6.
+            li
+                b width
+                | — width in pixels.
+            li
+                b height
+                | — height in pixels.
+            li
+                b background
+                | — RGB background color.
+            li
+                b color
+                | — RGB color of numbers.
+            li
+                b noise
+                | — additional graphical noise. true/false.
+            li
+                b lineWidth
+                | — thickness of noise lines. It is not recommended to put too large value.
+            li
+                b noiseColor
+                | — RGB color of noise lines.
+            li
+                b complexity
+                | — difficulty. 1-6.
+        p
+            | The following two configuration files -
+            span.mark crypt_admin.json
+            | и
+            span.mark crypt_captcha.json
+            | It contains only two parameters, but nevertheless crucial. They are responsible for encryption and counteraction to attempts
+            | to hack your imageboard.
+            span.mark crypt_admin.json
+            | it is recommended not to change, otherwise the created default profile of the moderator will become invalid.
+        ul
+            li
+                b secret
+                | — secret string that acts as a "salt" in the encryption algorithm. It is recommended to replace it with your own line,
+                | or at least add some symbols to
+                span.mark crypt_captcha.json
+                | . The content does not matter. Please note that the value
+                | must necessarily be enclosed in double quotes.
+            li
+                b iterations
+                | — the number of loop iterations of encryption. Change this parameter to
+                span.mark crypt_captcha.json
+                | is not necessary, but it will increase the reliability.
+                | Putting values above 5000 does not make sense. Note that the value
+                b NOT
+                | should contain double quotes. With quotation marks, you can not run your imageboard.
+        p
+            | The next configuration file
+            span.mark db.json
+            | - is one of the most important. If you do not have experience of working with databases, it is better not to touch it. In case,
+            | if you want to connect your database, you will need to specify there all the parameters,
+            | necessary for the connection. Please note that this property
+            span.mark storage
+            | has importance only when using sqlite, and properties
+            span.mark login
+            | ,
+            span.mark pass
+            | ,
+            span.mark database
+            | и
+            span.mark port
+            | have importance only when using other database control systems. In case the property is not important, it does not matter what will be written there - the main thing,
+            | don't leave it empty.
+        ul
+            li
+                b login
+                | — login for database. By default - root, but you can create other users.
+            li
+                b pass
+                | — passwords for database. To be created when setting up database or while creating a new user.
+            li
+                b database
+                | — name of the database.
+            li
+                b dialect
+                | — type of the database. Variants: mysql, mariadb, sqlite, postgres, mssql.
+            li
+                b storage
+                | — path to the database sqlite. While using other databases the value is of no importance.
+            li
+                b port
+                | — port which is listened by the database. For example, for MySQL and MariaDB it is 3306.
+        p
+            | And the last configuration file is called
+            span.mark messages.json
+            | . It is not that important, so you may skip it. It specifies the messages that are added to the message
+            | for the user during a ban or warning.
+        ul
+            li
+                b ban
+                | — message given out on a ban.
+            li
+                b prevention
+                | — message given out on warning.
+    mixin arrows('en', ['install', 'launch'])

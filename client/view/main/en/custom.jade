@@ -1,0 +1,64 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['admin', 'files'])
+    h1.art_header Customisation
+    section.main_article
+        p
+            | If you do not want to use the default design displayed in Hanako, or you wish to add some more features
+            | or some more options or your own scripts, you can easily do it. For your own scripts
+            | and styles are made a special directory, which you can find at this address
+            span.mark Hanako/client/source/mods
+            | .
+        article.note
+            | You can add the files in any folder, but it is not recommended, because it creates more confusion.
+        p
+            | Once a file has been placed in this directory, you can access it at the address
+            span.mark domain/src/mods/file name
+            | . Do not forget that you can create your own directories within
+            span.mark mods
+            | . In order to add your style or script to a page, you must register it in the template. At the following address
+            span.mark Hanako/client/views/basis
+            | you can find the template files
+            span.mark layout.jade
+            | и
+            span.mark layout_boards.jade
+            | . The first one is responsible for the main page, administrative panel and other pages, and the second one - for the board and each separate
+            | thread.
+        article.note
+            | More information about Jade template system, you can learn from
+            a(href="http://jade-lang.com/") the official website
+            | .
+        p In order to add your newly created script or style to the page, you need to write into the specific programming line.
+            | For example, let's take a file with the name
+            span.mark style.css
+            | , which we added in
+            span.mark mods
+            | and want to upload along with
+            span.mark layout_boards.jade
+            | . Now open the file
+            span.mark layout_boards.jade
+            | .
+        img(src="/src/img/docs/11.png" alt="doc11")
+        p
+            | It must be added into the line
+        span.mark link(rel="stylesheet" href="/src/mods/style.css")
+        p
+            | in the specific section
+            span.mark head
+            | . We write it to the rest of the styles, between rows 17 and 18 on the image.
+        p
+            | As we have seen, adding new styles, and scripts are quite simple. But what if we want to
+            | add a static page? For example, you need to create a page with the rules or FAQ. Adding it is even easier!
+            | At the address
+            span.mark Hanako/client/views/other
+            | you can find a directory for user pages. It is enough to put your page there in the usual
+            | HTML format and then go to the adess
+            span.mark domain/your_file
+            | , and it will be opened. For example, if we put there a file with specific name
+            span.mark rules.html
+            | , then you can see it in the corresponding address
+            span.mark domain/rules.html
+            | . So that the users become aware of the existence of this page, add links to it on other pages.
+            | You can read in detail about the various files in the next section.
+    mixin arrows('en', ['admin', 'files'])

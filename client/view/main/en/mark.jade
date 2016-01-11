@@ -1,0 +1,64 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['files', 'api'])
+    h1.art_header Layout
+    section.main_article
+        p
+            | Sometimes, users need to highlight in their message some information. For this you can make use
+            | layout templates. Given below are available methods for layout.
+        img(src="/src/img/docs/14.png" alt="doc14")
+        p
+            b Link to a message
+            | — link to another message, a pop-up when you hover over with cursor. Writing the message number after two
+            | signs "more". Example:
+            span.mark >>number
+            | .
+        p
+            b Quotation
+            | — the selection of previously put forward text. Writing after one sign "more". Example:
+            span.mark >text
+            | .
+        p
+            b Semi-bold
+            | — simply selected text. Written between two groups of two asterisks (stars, snowflakes). For example:
+            span.mark **text**
+            | .
+        p
+            b Cursive
+            | — or Italics. Written between two asterisks. For example:
+            span.mark *text*
+            | .
+        p
+            b Strikethrough
+            | — strikeout of text with one line. Written between two groups of two underscores (underline). For example:
+            span.mark __text__
+            | .
+        p
+            b Spoiler
+            | — hides text, which gets opened when you hover over with cursor. Written between the two groups of two percent sign.
+            | For example:
+            span.mark %%text%%
+            | .
+        p
+            b Link
+            | — on clicking which redirects to another website. Written after
+            span.mark http:
+            | or
+            span.mark https:
+            | . For example:
+            span.mark https://google.com
+            | .
+        p
+            | We should also mention the roulette, also called Dice rolling. It is not available on all boards, but only
+            | on those, where it is allowed in the settings.
+        img(src="/src/img/docs/5.png" alt="doc5")
+        p
+            | In order to use it, it is necessary to have the maximum value of dice throws, letters
+            span.mark RL
+            | and total number of dice throws. For example:
+            span.mark 20RL5
+            | . As a result of this will be generated the number of throws and a specified amount of results, as well as the maximum
+            | possible result. It should be remembered that the value of the throw can not be more than 100 and the number of of throws
+            | can't exceed 10.
+    mixin arrows('en', ['files', 'api'])

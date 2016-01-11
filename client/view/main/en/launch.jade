@@ -1,0 +1,55 @@
+extends ../../basis/layout
+
+block content
+    mixin arrows('en', ['config', 'admin'])
+    h1.art_header Launch
+    section.main_article
+        p
+            | By itself, the launch of Hanako does not pose too much difficulty, but at this stage, there emerge the reults of all earlier committed
+            | errors, so this chapter will be for the most part dedicated to fixing them.
+        p
+            | So, for a trial run it suffices to pass into the root catalogue of Hanako and execute the command
+            span.mark node hanako.js
+            | . If everything is set correctly, then in the console should appear a single line
+            span.mark Connect to DB created!
+        article.note
+            | If you run Hanako with specific user rights, ensure that the user has
+            | full rights to all nested directories and files in the application. To avoid the associated problems start
+            | Hanako from under the root.
+        h2 Possible errors and their recommended corrections
+        img(src="/src/img/docs/12.png" alt="doc12")
+        p
+            b Error: libgif.so.4: cannot open shared object file: No such file or directory
+        p
+            | Such a error occurs in the absence of the library for working with image format gif. You need to install
+            | it from the repository of your Linux distributive program kit. If you have Debian, then you will need to run the command
+            span.mark apt-get install libgif4
+            | .
+        img(src="/src/img/docs/13.png" alt="doc13")
+        p
+            b Error: Module version mismatch. Expected 14, got 46.
+        p
+            | The main reason for this error is an old version of Node.js. Hanako was developed on Node.js version 4.2.1,
+            | which is recommended to use. Also to run a particular version of Node.js, you can use
+            a(href="https://www.npmjs.com/package/n") module n                   
+            | .
+        h2 Final Launch
+        p
+            | If Hanako runs without problems, it is necessary to pre-empt possible future mistakes. To do this, it will be suitable
+            | to use module
+            span.mark forever.js
+            | . This module will almost instantly restart the server when it collapses due to any reason, thus avoiding a number of gaps in the working of website.
+            | To install it, you need to run the following command:
+        p
+            span.mark npm install -g forever
+        p
+            | After which you need to go to the root catalogue of Hanako and execute
+        p
+            span.mark forever start hanako.js
+        p
+            | That's all, Hanako is launched and is ready for use! If it becomes necessary, to stop Hanako it is just enough to execute
+        p
+            span.mark forever stop hanako.js
+        p
+            | from root catalogue of Hanako.
+    mixin arrows('en', ['config', 'admin'])
