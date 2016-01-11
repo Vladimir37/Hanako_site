@@ -51,13 +51,13 @@ block content
                 td Returns an image of CAPTCHA.
             tr
                 td
-                    span.mark /<address of the board>/
+                    span.mark /&lt;address of the board>/
                 td POST
                 td c_key, c_value, text. Optional: sage, title, name, file
                 td Creation of a thread.
             tr
                 td
-                    span.mark /<address of the board>/<number of the thread>
+                    span.mark /&lt;address of the board>/&lt;number of the thread>
                 td POST
                 td c_key, c_value, text. Optional: sage, title, name, file
                 td Answer in a thread.
@@ -91,7 +91,7 @@ block content
                 | — text of the post, which is entered by the user.
             li
                 b name
-                | — name of the post and key for generating tripcode, separated by # symbol
+                | — name of the post and key for generating tripcode, separated by octothorpe symbol
                 span.mark #
                 | . Optional.
             li
@@ -257,7 +257,7 @@ block content
                 | — CAPTCHA entered incorrectly.
             li
                 b 2
-                | — the message haswords from the spam-list.
+                | — the message has words from the spam-list.
             li
                 b 3
                 | — IP address is blocked.

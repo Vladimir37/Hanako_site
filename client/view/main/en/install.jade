@@ -2,7 +2,7 @@ extends ../../basis/layout
 
 block content
     mixin arrows('en', ['general', 'config'])
-    h1.art_header Configuration
+    h1.art_header Installation
     section.main_article
         p
             | First of all you need Node.js to run Hanako. Hanako was developed on Node.js version 4.2.1, but
@@ -10,7 +10,9 @@ block content
             a(href="https://nodejs.org/") their official website
             | . If you have any difficulties with the installation, we recommend that you familiarize yourself with
             a(href="https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions") instructions
-            | . After downloading and installing the recommended version for your operating system (any Linux distribution program kit is recommended)
+            | .
+            b Highly recommended to use version 4.2.1!
+            | After downloading and installing the recommended version for your operating system (any Linux distribution program kit is recommended)
             | you can continue.
         p
             | Next, you need a database. The Hanako already has built-in sqlite, so if you do not want
