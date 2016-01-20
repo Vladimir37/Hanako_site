@@ -6,9 +6,6 @@ function render_pages(req, res, next) {
             if(err) {
                 res.render('errors/e404');
             }
-            else {
-                res.end(result);
-            }
         });
     }
     else {
@@ -16,9 +13,6 @@ function render_pages(req, res, next) {
         res.render('main/' + index_lang + '/index', {}, function(err, result) {
             if(err) {
                 res.render('errors/e404');
-            }
-            else {
-                res.end(result);
             }
         });
     }
