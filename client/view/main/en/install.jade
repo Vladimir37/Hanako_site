@@ -21,9 +21,13 @@ block content
             | If we have installed another database, you will need to create an empty database.
         p
             | After this, it's almost all done for launch of Hanako. Now download Hanako:
-        a(href="").download_button
-            article Hanako - Russian version
-        a(href="").download_button
-            article Hanako - English version
+        a(href="https://github.com/Vladimir37/Hanako/archive/master.zip" download).download_button
+            article Hanako - Full version
+        a(href="https://github.com/Vladimir37/Hanako/archive/minimal.zip" download).download_button
+            article Hanako - Minimal version
+        article.note
+            | Minimal version does not contain npm packages. You'll have to install them through command
+            span.mark npm i
+            | from root folder Hanako.
         p Unpack the archive in any convenient place for you. Now you are ready to set up.
     mixin arrows('en', ['general', 'config'])

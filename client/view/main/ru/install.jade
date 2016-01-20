@@ -21,9 +21,13 @@ block content
             | Если вы установили иную СУБД, то вам нужно будет создать пустую базу данных.
         p
             | После этого всё практически готово к запуску Hanako. Теперь скачайте Hanako:
-        a(href="").download_button
-            article Hanako - русская версия
-        a(href="").download_button
-            article Hanako - english version
+        a(href="https://github.com/Vladimir37/Hanako/archive/master.zip" download).download_button
+            article Hanako - Полная версия
+        a(href="https://github.com/Vladimir37/Hanako/archive/minimal.zip" download).download_button
+            article Hanako - Минимальная версия
+        article.note
+            | Минимальная версия предоставляется без npm пакетов. Для работы вам придётся установить их самостоятельно командой
+            span.mark npm i
+            | из корневого каталога Hanako.
         p Распакуйте архив в любое удобное вам место. Теперь можно приступать к настройке.
     mixin arrows('ru', ['general', 'config'])
