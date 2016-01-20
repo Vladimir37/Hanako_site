@@ -4,6 +4,9 @@ function render(file) {
             if(err) {
                 res.render('errors/e404');
             }
+            else {
+                res.send(html);
+            }
         });
     }
 };
