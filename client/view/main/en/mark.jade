@@ -2,21 +2,21 @@ extends ../../basis/layout
 
 block content
     mixin arrows('en', ['files', 'api'])
-    h1.art_header Layout
+    h1.art_header Marking
     section.main_article
         p
             | Sometimes, users need to highlight in their message some information. For this you can make use
-            | layout templates. Given below are available methods for layout.
+            | markup templates. Given below are available methods for marking.
         img(src="/src/img/docs/14.png" alt="doc14")
         p
             b Link to a message
             | — link to another message, a pop-up when you hover over with cursor. Writing the message number after two
-            | signs "more". Example:
+            | signs "Greater-than". Example:
             span.mark >>number
             | .
         p
             b Quotation
-            | — the selection of previously put forward text. Writing after one sign "more". Example:
+            | — the selection of previously put forward text. Writing after one sign "Greater-than". Example:
             span.mark >text
             | .
         p
