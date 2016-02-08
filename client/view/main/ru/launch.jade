@@ -33,6 +33,15 @@ block content
             | её же и рекомендуется использовать. Также для запуска Node.js определённой версии можно воспользоваться
             a(href="https://www.npmjs.com/package/n") модулем n
             | .
+        img(src="/src/img/docs/15.png" alt="doc15")
+        p
+            b Error: spawn convert ENOENT
+        p
+            | Такая ошибка обычно возникает не при запуске, а при попытке открыть в браузере определённые страницы
+            | Hanako. Это значит, что у вас не установлено приложение ImageMagick, необходимое для работы с изображениями.
+            | Установите его из репозитория вашей системы. В Debian необходимо ввести следующее:
+            span.mark apt-get install imagemagick
+            | .
         p
             b No package 'pangocairo' found
         p
